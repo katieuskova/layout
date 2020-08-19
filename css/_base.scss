@@ -1,0 +1,97 @@
+html, body{
+    @include Rubik;
+    @include Lato;
+    box-sizing: border-box;
+    min-width: 320px ;
+    background-color: $background-color;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.container-2{
+    max-width: 1366px;
+    margin: 0 auto;
+}
+* ul {
+    list-style-type: none;
+    padding: 0;
+}
+* a {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    @include Lato;
+    width: 206px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    span:first-child {
+    padding-left: 24px;
+    padding-bottom: 4px;
+    }
+
+    .logo-border{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1px;
+    }
+}
+
+.title {
+    @include Rubik;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    color: $text-color;
+    margin: 0;
+}
+
+.card {
+    @include border;
+    border-radius: 8px;
+    background-color: $white-color;
+}
+
+.slider__control{
+    display: flex;
+    justify-content: center;
+
+
+    button {
+        width: 36px;
+        height: 36px;
+        box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+        border-radius: 50%;
+        border: 0 transparent;
+        background-color: $white-color;
+        margin-left: 8px;
+    }
+
+    div:last-child {
+        position: relative;
+        bottom: 7px;
+        left: 388px;
+    }
+}
+
+
+
+
+

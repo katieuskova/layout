@@ -1,0 +1,55 @@
+.header {
+    @include Lato;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+
+    ul {
+        display: flex;
+
+        li {
+            font-weight: 500;
+            margin-left: 31px;
+        }
+    }
+}
+
+.banner {
+    background-image: url('../img/main-banner.png');
+
+    &__container {
+        padding: 149px 0 118px 198px;
+        color: $banner-color;
+    }
+
+    h2 {
+        @include Rubik;
+        font-weight: 800;
+        font-size: 62px;
+        margin-top: -4px;
+        margin-bottom: 4px;
+    }
+
+    small, p {
+        @include Lato;
+    }
+
+    small {
+        font-size: 14px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    &__btn {
+        background-color: $background-color;
+        margin: 35px 0;
+    }
+
+    &__logo__border {
+        background-color: $orange-color;
+    }
+}
